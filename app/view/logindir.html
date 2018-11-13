@@ -1,0 +1,15 @@
+
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<div class="text-center">
+    <form class="form-signin" ng-submit='auth()'>
+        <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" ng-model="login.username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" ng-model="login.password" placeholder="Password" required>
+        <span ng-if="err == true" style="color:red">Invalid Username & password</span><br>
+
+        <button class="btn btn-lg btn btn-outline-primary btn-block" type="submit" >Sign in</button>
+  </form>
+   
+</div>
